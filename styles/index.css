@@ -222,6 +222,27 @@
     font-size: 1.5;
     color: #3A3A3A;
   }
+  /* popular-collection */
+  .popular-collection{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    padding: 20px 180px;
+
+    /* width: 80%; */
+    margin-top: 30px;
+  }
+  .popular-collection-box{
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+  }
+  .popular-collection-simple-box{
+   text-align: left;
+   justify-content: center;
+   align-items: center;
+  }
+
 
 
   @media screen and (max-width: 768px) {
@@ -252,6 +273,41 @@
   }
   .banner-title{
     font-size: 1.75rem;
+  }
+  .container-popular-collection{
+  
+  }
+  .popular-collection{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    
+    padding: 20px;
+    
+  }
+  .popular-collection-box{
+    
+   
+   
+    
+  }
+  .popular-collection-box img{
+    /* width: 100%; */
+  }
+  .popular-collection-simple-box{
+   text-align: left;
+   width: 100%;
+  }
+  .img-icon{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .img-icon img{
+    max-width: 20px;
+    height: 14px;
+    margin: 0px;
   }
   
   
