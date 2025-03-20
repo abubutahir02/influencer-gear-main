@@ -1,4 +1,9 @@
-.poppins-thin {
+*{
+  margin: 0;
+  padding: 0;
+  background-color: rgba(170, 170, 170, 1);
+}
+ .poppins-thin {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: normal;
@@ -111,8 +116,8 @@
         
     }
     .all-description{
-        font-size: 1rem;
-        font-weight: 600;
+        font-size: 0.875rem;
+        font-weight:400;
         color: #3A3A3A;
     }
 
@@ -120,11 +125,13 @@
   header{
     width: 100%;
     background-image: linear-gradient(rgba(170, 170, 170, 1));
+    margin-bottom: 80px;
   }
   .navbar{
        justify-content: space-between;
        align-items: center;
        padding: 20px 80px;
+      
        
   }
   .nav-title{
@@ -140,7 +147,28 @@
     font-size: 1rem;
     color: #3A3A3A;
   } 
-  /* banner styles */
+  .navbar a{
+    list-style: none;
+    text-decoration: none;
+  }
+  /* hamburger  */
+ 
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+  .hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #3A3A3A;
+    margin: 4px 0;
+}
+
+ 
+ 
+    /* banner styles */
   .banner{
     justify-content: center;
     align-items: center;
@@ -153,12 +181,18 @@
   .banner-title{
     font-size: 3.25rem;
     color: #3A3A3A;
+    list-style: none;
   }
   .btn-primary{
     color: #ffffff;
     background-color: rgba(224, 44, 109, 1);
     padding: 10px 24px;
     border-radius: 40px;
+    border: none;
+    margin-top: 10px;
+  }
+  .btn-primary > i{
+    background-color:  rgba(224, 44, 109, 1);
   }
   /* img-icon */
   .img-icon{
@@ -166,9 +200,61 @@
     align-items: center;
     text-align: center;
     margin-top: 80px;
+    margin-bottom: 80px;
   }
   .img-icon img{
     max-width: 60px;
     height: 44px;
     margin: auto 35px;
+  }
+  /* popular-collection */
+  .container-popular-collection{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .popular-collection-title{
+    font-size: 1.75rem;
+    color: #3A3A3A;
+   
+  }
+  .doller{
+    font-size: 1.5;
+    color: #3A3A3A;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .hamburger {
+      display: flex;
+  }
+  #links{
+    display: none;
+  }
+  .navbar{
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  .banner{
+    flex-direction: column;
+    text-align: center;
+  }
+  .banner img {
+    width: 100%;
+  }
+  .banner-box{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .banner-title{
+    font-size: 1.75rem;
+  }
+  
+  
+ 
+  
   }

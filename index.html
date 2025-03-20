@@ -11,18 +11,31 @@
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body class="poppins-regular">
-    <header>
-         <nav class="navbar display-flex">
-                   <h3 class="nav-title poppins-bold">Influencer products</h3>
-                   <ul class="poppins-semibold display-flex">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">Sign up</a></li>
-                    <li><a href="">Log In</a></li>
-                    <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+    <header>   
+          <nav class="navbar display-flex">
+            <div class="hamburger"  onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <h3 class="nav-title poppins-bold">Influencer products</h3>
+                   <ul class="poppins-semibold display-flex" id="links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Sign up</a></li>
+                    <li><a href="#">Log In</a></li>
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
                   
                    </ul>
+                   <script>
+                    function toggleMenu() {
+                        const nav = document.querySelector('#links');
+                        nav.classList.toggle('active');
+                    }
+                </script>
+                
+                   
          </nav>
          <div class="banner display-flex">
             <div class="banner-box">
@@ -45,6 +58,105 @@
 
     </div>
     <main>
+        <section>
+           <div class="container-popular-collection">
+            <h4 class="popular-collection-title poppins-semibold">Popular Collection</h4>
+            <div class="popular-collection">
+                 <!-- Flex Tripod -->
+                <div class="popular-collection-box">
+                    <img src="images/tripod.png" alt="tripod">
+                    <div class="popular-collection-simple-box">
+                        <h5 class="popular-collection-title poppins-medium">microphone</h5>
+                        <h6 class="poppins-regular doller">$120.25</h6>
+                        <p class="all-description">Wordwide shifting available
+                            Buyers protection possible!</p>
+                    </div>
+                </div>
+                <!-- mic.png -->
+                <div class="popular-collection-box">
+                    <img src="images/mic.png" alt="mic.png">
+                    <div class="popular-collection-simple-box">
+                        <h5 class="popular-collection-title poppins-medium">microphone</h5>
+                        <h6 class="poppins-regular doller">$50.48</h6>
+                        <p class="all-description">Wordwide shifting available
+                            Buyers protection possible!</p>
+                    </div>
+                </div>
+                <!-- Airbuds -->
+                <div class="popular-collection-box">
+                    <img src="images/airpod.png" alt="tripod">
+                    <div class="popular-collection-simple-box">
+                        <h5 class="popular-collection-title poppins-medium">Airbuds</h5>
+                        <h6 class="poppins-regular doller">$50.48</h6>
+                        <p class="all-description">Wordwide shifting available
+                            Buyers protection possible!</p>
+                    </div>
+                </div>
+                <!-- Drone -->
+                <div class="popular-collection-box">
+                    <img src="images/drone.png" alt="tripod">
+                    <div class="popular-collection-simple-box">
+                        <h5 class="popular-collection-title poppins-medium">Drone</h5>
+                        <h6 class="poppins-regular doller">$50.48</h6>
+                        <p class="all-description">Wordwide shifting available
+                            Buyers protection possible!</p>
+                    </div>
+                </div>
+                <!-- Light Setup -->
+                <div class="popular-collection-box">
+                    <img src="images/lights.png" alt="tripod">
+                    <div class="popular-collection-simple-box">
+                        <h5 class="popular-collection-title poppins-medium">Light Setup</h5>
+                        <h6 class="poppins-regular doller">$1350.48</h6>
+                        <p class="all-description">Wordwide shifting available
+                            Buyers protection possible!</p>
+                    </div>
+                </div>
+                <!--  Photoshoot set -->
+                <div class="popular-collection-box">
+                    <img src="images/setup.png" alt="tripod">
+                    <div class="popular-collection-simple-box">
+                        <h5 class="popular-collection-title poppins-medium">Photoshoot set</h5>
+                        <h6 class="poppins-regular doller">$250.48</h6>
+                        <p class="all-description">Wordwide shifting available
+                            Buyers protection possible!</p>
+                    </div>
+                </div>
+                <!-- Vlogging Camera -->
+                <div class="popular-collection-box">
+                    <img src="images/camera.png" alt="tripod">
+                    <div class="popular-collection-simple-box">
+                        <h5 class="popular-collection-title poppins-medium">Vlogging Camera</h5>
+                        <h6 class="poppins-regular doller">$230.48</h6>
+                        <p class="all-description">Wordwide shifting available
+                            Buyers protection possible!</p>
+                    </div>
+                </div>
+                <!-- Green Screen -->
+                <div class="popular-collection-box">
+                    <img src="images/single-light.png" alt="tripod">
+                    <div class="popular-collection-simple-box">
+                        <h5 class="popular-collection-title poppins-medium">Green Screen</h5>
+                        <h6 class="poppins-regular doller">$50.48</h6>
+                        <p class="all-description">Wordwide shifting available
+                            Buyers protection possible!</p>
+                    </div>
+                </div>
+                <!-- Action Camera -->
+                <div class="popular-collection-box">
+                    <img src="images/action.png" alt="tripod">
+                    <div class="popular-collection-simple-box">
+                        <h5 class="popular-collection-title poppins-medium">Action Camera</h5>
+                        <h6 class="poppins-regular doller">$50.48</h6>
+                        <p class="all-description">Wordwide shifting available
+                            Buyers protection possible!</p>
+                    </div>
+                </div>
+                <!-- end  -->
+            </div>
+
+           </div>
+        </section>
 
     </main>
     <footer>
